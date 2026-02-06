@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Card Flip Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-container">
+    <header class="game-header">
+      <h1>🃏 Memory Card Game</h1>
+      <div class="game-stats">
+        <span class="stat">Moves: <strong id="move-count">0</strong></span>
+        <span class="stat">Pairs: <strong id="pair-count">0</strong> / 4</span>
+      </div>
+      <button id="restart-btn" aria-label="Restart game">🔄 Restart</button>
+    </header>
+
+    <section class="card-grid" id="card-grid" aria-label="Memory card game board">
+      <!-- Cards injected by JS -->
+    </section>
+
+    <div class="overlay" id="win-overlay" hidden>
+      <div class="win-modal" role="alert">
+        <h2>🎉 You Win!</h2>
+        <p>Completed in <strong id="final-moves">0</strong> moves</p>
+        <button id="play-again-btn">Play Again</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
